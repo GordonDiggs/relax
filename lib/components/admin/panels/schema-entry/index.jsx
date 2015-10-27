@@ -1,3 +1,4 @@
+import {ClientStore} from 'relax-framework';
 import {Component, Router} from 'relax-framework';
 import merge from 'lodash.merge';
 import forEach from 'lodash.foreach';
