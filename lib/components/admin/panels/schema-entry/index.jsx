@@ -309,10 +309,295 @@ export default class SchemaEntry extends Component {
     }
   }
 
+  renderBuildLinks2 () {
+    if (this.state.schemaEntry._overlap) {
+      const buildLink = '/admin/schema/'+this.context.schema.slug+'/'+this.state.schemaEntry._slug+'/single';
+      return (
+        <div>
+          <A className='link' href={buildLink}>
+            <i className='material-icons'>build</i>
+            <span>Build page</span>
+          </A>
+          <a href='#' className='link' onClick={this.onRevertTemplate.bind(this)}>
+            <i className='material-icons'>backspace</i>
+            <span>Revert to template</span>
+          </a>
+        </div>
+        <div>
+          <A className='link' href={buildLink}>
+            <i className='material-icons'>build</i>
+            <span>Build page</span>
+          </A>
+          <a href='#' className='link' onClick={this.onRevertTemplate.bind(this)}>
+            <i className='material-icons'>backspace</i>
+            <span>Revert to template</span>
+          </a>
+        </div>
+        <div>
+          <A className='link' href={buildLink}>
+            <i className='material-icons'>build</i>
+            <span>Build page</span>
+          </A>
+          <a href='#' className='link' onClick={this.onRevertTemplate.bind(this)}>
+            <i className='material-icons'>backspace</i>
+            <span>Revert to template</span>
+          </a>
+        </div>
+        <div>
+          <A className='link' href={buildLink}>
+            <i className='material-icons'>build</i>
+            <span>Build page</span>
+          </A>
+          <a href='#' className='link' onClick={this.onRevertTemplate.bind(this)}>
+            <i className='material-icons'>backspace</i>
+            <span>Revert to template</span>
+          </a>
+        </div>
+        <div>
+          <A className='link' href={buildLink}>
+            <i className='material-icons'>build</i>
+            <span>Build page</span>
+          </A>
+          <a href='#' className='link' onClick={this.onRevertTemplate.bind(this)}>
+            <i className='material-icons'>backspace</i>
+            <span>Revert to template</span>
+          </a>
+        </div>
+        <div>
+          <A className='link' href={buildLink}>
+            <i className='material-icons'>build</i>
+            <span>Build page</span>
+          </A>
+          <a href='#' className='link' onClick={this.onRevertTemplate.bind(this)}>
+            <i className='material-icons'>backspace</i>
+            <span>Revert to template</span>
+          </a>
+        </div>
+        <div>
+          <A className='link' href={buildLink}>
+            <i className='material-icons'>build</i>
+            <span>Build page</span>
+          </A>
+          <a href='#' className='link' onClick={this.onRevertTemplate.bind(this)}>
+            <i className='material-icons'>backspace</i>
+            <span>Revert to template</span>
+          </a>
+        </div>
+        <div>
+          <A className='link' href={buildLink}>
+            <i className='material-icons'>build</i>
+            <span>Build page</span>
+          </A>
+          <a href='#' className='link' onClick={this.onRevertTemplate.bind(this)}>
+            <i className='material-icons'>backspace</i>
+            <span>Revert to template</span>
+          </a>
+        </div>
+        <div>
+          <A className='link' href={buildLink}>
+            <i className='material-icons'>build</i>
+            <span>Build page</span>
+          </A>
+          <a href='#' className='link' onClick={this.onRevertTemplate.bind(this)}>
+            <i className='material-icons'>backspace</i>
+            <span>Revert to template</span>
+          </a>
+        </div>
+        <div>
+          <A className='link' href={buildLink}>
+            <i className='material-icons'>build</i>
+            <span>Build page</span>
+          </A>
+          <a href='#' className='link' onClick={this.onRevertTemplate.bind(this)}>
+            <i className='material-icons'>backspace</i>
+            <span>Revert to template</span>
+          </a>
+        </div>
+        <div>
+          <A className='link' href={buildLink}>
+            <i className='material-icons'>build</i>
+            <span>Build page</span>
+          </A>
+          <a href='#' className='link' onClick={this.onRevertTemplate.bind(this)}>
+            <i className='material-icons'>backspace</i>
+            <span>Revert to template</span>
+          </a>
+        </div>
+        <div>
+          <A className='link' href={buildLink}>
+            <i className='material-icons'>build</i>
+            <span>Build page</span>
+          </A>
+          <a href='#' className='link' onClick={this.onRevertTemplate.bind(this)}>
+            <i className='material-icons'>backspace</i>
+            <span>Revert to template</span>
+          </a>
+        </div>
+        <div>
+          <A className='link' href={buildLink}>
+            <i className='material-icons'>build</i>
+            <span>Build page</span>
+          </A>
+          <a href='#' className='link' onClick={this.onRevertTemplate.bind(this)}>
+            <i className='material-icons'>backspace</i>
+            <span>Revert to template</span>
+          </a>
+        </div>
+        <div>
+          <A className='link' href={buildLink}>
+            <i className='material-icons'>build</i>
+            <span>Build page</span>
+          </A>
+          <a href='#' className='link' onClick={this.onRevertTemplate.bind(this)}>
+            <i className='material-icons'>backspace</i>
+            <span>Revert to template</span>
+          </a>
+        </div>
+      );
+    } else {
+      return (
+        <a href='#' className='link' onClick={this.onOverlap.bind(this)}>
+          <i className='material-icons'>merge_type</i>
+          <span>Overlap template</span>
+        </a>
+      );
+    }
+  }
+
   renderBuildLinks () {
     if (this.state.schemaEntry._overlap) {
       const buildLink = '/admin/schema/'+this.context.schema.slug+'/'+this.state.schemaEntry._slug+'/single';
       return (
+        <div>
+          <A className='link' href={buildLink}>
+            <i className='material-icons'>build</i>
+            <span>Build page</span>
+          </A>
+          <a href='#' className='link' onClick={this.onRevertTemplate.bind(this)}>
+            <i className='material-icons'>backspace</i>
+            <span>Revert to template</span>
+          </a>
+        </div>
+        <div>
+          <A className='link' href={buildLink}>
+            <i className='material-icons'>build</i>
+            <span>Build page</span>
+          </A>
+          <a href='#' className='link' onClick={this.onRevertTemplate.bind(this)}>
+            <i className='material-icons'>backspace</i>
+            <span>Revert to template</span>
+          </a>
+        </div>
+        <div>
+          <A className='link' href={buildLink}>
+            <i className='material-icons'>build</i>
+            <span>Build page</span>
+          </A>
+          <a href='#' className='link' onClick={this.onRevertTemplate.bind(this)}>
+            <i className='material-icons'>backspace</i>
+            <span>Revert to template</span>
+          </a>
+        </div>
+        <div>
+          <A className='link' href={buildLink}>
+            <i className='material-icons'>build</i>
+            <span>Build page</span>
+          </A>
+          <a href='#' className='link' onClick={this.onRevertTemplate.bind(this)}>
+            <i className='material-icons'>backspace</i>
+            <span>Revert to template</span>
+          </a>
+        </div>
+        <div>
+          <A className='link' href={buildLink}>
+            <i className='material-icons'>build</i>
+            <span>Build page</span>
+          </A>
+          <a href='#' className='link' onClick={this.onRevertTemplate.bind(this)}>
+            <i className='material-icons'>backspace</i>
+            <span>Revert to template</span>
+          </a>
+        </div>
+        <div>
+          <A className='link' href={buildLink}>
+            <i className='material-icons'>build</i>
+            <span>Build page</span>
+          </A>
+          <a href='#' className='link' onClick={this.onRevertTemplate.bind(this)}>
+            <i className='material-icons'>backspace</i>
+            <span>Revert to template</span>
+          </a>
+        </div>
+        <div>
+          <A className='link' href={buildLink}>
+            <i className='material-icons'>build</i>
+            <span>Build page</span>
+          </A>
+          <a href='#' className='link' onClick={this.onRevertTemplate.bind(this)}>
+            <i className='material-icons'>backspace</i>
+            <span>Revert to template</span>
+          </a>
+        </div>
+        <div>
+          <A className='link' href={buildLink}>
+            <i className='material-icons'>build</i>
+            <span>Build page</span>
+          </A>
+          <a href='#' className='link' onClick={this.onRevertTemplate.bind(this)}>
+            <i className='material-icons'>backspace</i>
+            <span>Revert to template</span>
+          </a>
+        </div>
+        <div>
+          <A className='link' href={buildLink}>
+            <i className='material-icons'>build</i>
+            <span>Build page</span>
+          </A>
+          <a href='#' className='link' onClick={this.onRevertTemplate.bind(this)}>
+            <i className='material-icons'>backspace</i>
+            <span>Revert to template</span>
+          </a>
+        </div>
+        <div>
+          <A className='link' href={buildLink}>
+            <i className='material-icons'>build</i>
+            <span>Build page</span>
+          </A>
+          <a href='#' className='link' onClick={this.onRevertTemplate.bind(this)}>
+            <i className='material-icons'>backspace</i>
+            <span>Revert to template</span>
+          </a>
+        </div>
+        <div>
+          <A className='link' href={buildLink}>
+            <i className='material-icons'>build</i>
+            <span>Build page</span>
+          </A>
+          <a href='#' className='link' onClick={this.onRevertTemplate.bind(this)}>
+            <i className='material-icons'>backspace</i>
+            <span>Revert to template</span>
+          </a>
+        </div>
+        <div>
+          <A className='link' href={buildLink}>
+            <i className='material-icons'>build</i>
+            <span>Build page</span>
+          </A>
+          <a href='#' className='link' onClick={this.onRevertTemplate.bind(this)}>
+            <i className='material-icons'>backspace</i>
+            <span>Revert to template</span>
+          </a>
+        </div>
+        <div>
+          <A className='link' href={buildLink}>
+            <i className='material-icons'>build</i>
+            <span>Build page</span>
+          </A>
+          <a href='#' className='link' onClick={this.onRevertTemplate.bind(this)}>
+            <i className='material-icons'>backspace</i>
+            <span>Revert to template</span>
+          </a>
+        </div>
         <div>
           <A className='link' href={buildLink}>
             <i className='material-icons'>build</i>
