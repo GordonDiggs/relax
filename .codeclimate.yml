@@ -8,10 +8,7 @@ engines:
     enabled: true
     config:
       languages:
-        javascript:
-          paths:
-            - "**/*.js"
-            - "**/*.jsx"
+        javascript: {}
   requiresafe:
     enabled: true
 ratings:
