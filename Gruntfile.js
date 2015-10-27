@@ -1,7 +1,7 @@
 module.exports = function (grunt) {
   'use strict';
 
-  var browserifyExternalOptions, browserifyExternalRequire;
+  var browserifyExternalOptions, browserifyExternalRequire
 
   browserifyExternalOptions = browserifyExternalRequire = [
     'backbone',
