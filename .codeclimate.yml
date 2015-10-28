@@ -3,6 +3,7 @@ engines:
   eslint:
     enabled: true
     config:
+      debug: true
       extensions: [".js", ".jsx"]
   duplication:
     enabled: true
