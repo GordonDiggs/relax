@@ -1,10 +1,10 @@
----
 engines:
   eslint:
     enabled: true
     config:
-      debug: true
-      extensions: [".js", ".jsx"]
+      extensions:
+      - .js
+      - .jsx
   duplication:
     enabled: true
     config:
@@ -12,10 +12,14 @@ engines:
         javascript: {}
   requiresafe:
     enabled: true
+  fixme:
+    enabled: true
 ratings:
   paths:
   - "**.js"
   - "**.jsx"
 exclude_paths:
-  - "Gruntfile.js"
-  - "assets/**/*"
+- node_modules/**/*
+- config/**/*
+- test/**/*
+
