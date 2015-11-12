@@ -10,7 +10,7 @@ engines:
     config:
       languages:
         javascript: {}
-  requiresafe:
+  nodesecurity:
     enabled: true
   fixme:
     enabled: true
